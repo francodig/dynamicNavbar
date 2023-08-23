@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "roboto";
+}
+
+
+/* -------------header------------- */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 10px 20px;
+    z-index: 10;
+}
+header.abajo{
+    background: rgb(0, 0, 0);
+    padding: 15px 20px;
+}
+
+ header .logo{
+    width: 10.5em;
+} 
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    font-size: 0.8em;
+    transition: 0.7s;
+}
+
+.loginButton{
+    background-color:rgba(255, 217, 0, 0.644) ;
+    padding: 0.7em 0.5em;
+    width: auto;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.callButton{
+    background-color:rgba(168, 48, 48, 0.685) ;
+    margin-left: 20px;
+    padding: 0.7em 0.5em;
+    width: auto;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.loginButton:hover{
+    background-color: rgb(92, 92, 167);
+}
+
+.callButton:hover{
+    background-color: rgb(92, 92, 167);
+}
+
+header ul li a:hover{
+    color:  rgb(0, 0, 0);
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+/* -------------main------------- */
+/* -------------container1------------- */
+
+.container1{
+    background-image: url(./assets/picture25.avif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: rgb(190, 123, 123);
+}
